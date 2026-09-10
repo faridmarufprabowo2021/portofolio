@@ -1,0 +1,826 @@
+{
+  "scene_info": {
+    "engine": "CYCLES",
+    "cycles_device": "GPU",
+    "samples": 128,
+    "units": "METERS"
+  },
+  "objects_summary": {
+    "total_objects": 122,
+    "mesh_objects": 117,
+    "light_objects": 4,
+    "camera_objects": 1
+  },
+  "collections": {
+    "01_Architecture": [
+      "Floor",
+      "Baseboard_B",
+      "Baseboard_L",
+      "Wall_Accent",
+      "Wall_Left",
+      "Wall_R_Top",
+      "Wall_R_Bot",
+      "Window_Frame",
+      "Window_Glass"
+    ],
+    "02_Furniture": [
+      "Sofa_BaseFrame",
+      "Sofa_Leg_1",
+      "Sofa_Leg_2",
+      "Sofa_Leg_3",
+      "Sofa_Leg_4",
+      "Sofa_Backrest",
+      "Sofa_Armrest_L",
+      "Sofa_Armrest_R",
+      "Seat_Cushion_1",
+      "Seat_Cushion_2",
+      "Seat_Cushion_3",
+      "Back_Cushion_1",
+      "Tuft_Button_1",
+      "Tuft_Button_1.001",
+      "Back_Cushion_2",
+      "Tuft_Button_2",
+      "Tuft_Button_2.001",
+      "Back_Cushion_3",
+      "Tuft_Button_3",
+      "Tuft_Button_3.001",
+      "Pillow_Mustard_L",
+      "Pillow_Cream_L",
+      "Pillow_Teal_R",
+      "Throw_Blanket_Drape",
+      "Throw_Blanket_Fold",
+      "Knitted_Ottoman_Pouf",
+      "CoffeeTable_Top",
+      "Table_Leg1",
+      "Table_Leg2",
+      "Table_Leg3",
+      "Table_Leg4",
+      "TV_Cabinet_Frame",
+      "Cabinet_Slatted_Door_L",
+      "Cabinet_Slatted_Door_R",
+      "Door_Handle_Base_L1",
+      "Door_Handle_Base_L2",
+      "Door_Handle_Bar_L",
+      "Door_Handle_Base_R1",
+      "Door_Handle_Base_R2",
+      "Door_Handle_Bar_R",
+      "Cabinet_Center_Divider",
+      "SmartTV_Bezel",
+      "SmartTV_GameScreen",
+      "Game_HUD_HPBar",
+      "Game_HUD_MiniMap",
+      "TV_Soundbar_Body",
+      "TV_Soundbar_MeshGrille",
+      "Soundbar_Brass_Trim_Top",
+      "Soundbar_Brass_Trim_Bot",
+      "Soundbar_Btn_Power",
+      "Soundbar_Btn_VolUp",
+      "Soundbar_Btn_VolDown"
+    ],
+    "03_Decor": [
+      "Curtain_L",
+      "Curtain_R",
+      "Area_Rug",
+      "ArcLamp_FootSwitch",
+      "Pouf_Leather_Tag",
+      "Decor_Book1",
+      "Decor_Book2",
+      "Decor_Mug",
+      "CoffeeTable_Tray",
+      "ScentedCandle_Jar",
+      "ScentedCandle_Wax",
+      "ReedDiffuser_Bottle",
+      "Rattan_Stick_1",
+      "Rattan_Stick_2",
+      "Rattan_Stick_3",
+      "Rattan_Stick_4",
+      "Rattan_Stick_5",
+      "Reading_Glasses",
+      "PS5_Game_Case1",
+      "PS5_Game_Case2",
+      "PS5_Game_Case3",
+      "Audio_Receiver",
+      "Terracotta_Vase",
+      "TV_Cable_Raceway",
+      "PS5_Stand",
+      "PS5_Black_Core",
+      "PS5_Plate_Left",
+      "PS5_Plate_Right",
+      "PS5_Power_Button",
+      "PS5_Eject_Button",
+      "PS5_Disc_Slot",
+      "DualSense_Charging_Dock",
+      "DualSense1_Body",
+      "DualSense1_Center",
+      "DualSense2_Body",
+      "DualSense2_Center",
+      "potted_plant_01_stem",
+      "potted_plant_01_pebbles",
+      "potted_plant_01_pot",
+      "potted_plant_01_leaves",
+      "Art_Frame_Oak",
+      "Art_Canvas_Terracotta",
+      "Art_Shape_Teal",
+      "Art_Circle_Gold",
+      "Art_Glass_Cover"
+    ],
+    "04_Lighting": [
+      "ArcLamp_MarbleBase",
+      "ArcLamp_BrassCollar",
+      "ArcLamp_Stem_V",
+      "ArcLamp_Stem_Arc1",
+      "ArcLamp_Stem_Arc2",
+      "ArcLamp_DomeShade",
+      "ArcLamp_Bulb",
+      "ArcLamp_Light",
+      "ScentedCandle_Flame",
+      "Candle_Flame_Light",
+      "TV_LED_Backlight",
+      "Soundbar_Status_LED",
+      "PS5_Blue_LED_Strip",
+      "Sunlight_Afternoon",
+      "Ceiling_Ambient"
+    ]
+  },
+  "ergonomic_dimensions": {
+    "Floor": {
+      "location_xyz": [
+        0.0,
+        0.0,
+        -0.05
+      ],
+      "dimensions_xyz": [
+        5.0,
+        6.0,
+        0.1
+      ],
+      "height_z": 0.1
+    },
+    "Sofa_BaseFrame": {
+      "location_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions_xyz": [
+        2.4,
+        0.95,
+        0.14
+      ],
+      "height_z": 0.14
+    },
+    "Seat_Cushion_1": {
+      "location_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions_xyz": [
+        0.64,
+        0.78,
+        0.18
+      ],
+      "height_z": 0.18
+    },
+    "Sofa_Backrest": {
+      "location_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions_xyz": [
+        2.4,
+        0.22,
+        0.65
+      ],
+      "height_z": 0.65
+    },
+    "CoffeeTable_Top": {
+      "location_xyz": [
+        0.0,
+        1.35,
+        0.38
+      ],
+      "dimensions_xyz": [
+        1.1,
+        0.6,
+        0.04
+      ],
+      "height_z": 0.04
+    },
+    "TV_Cabinet_Frame": {
+      "location_xyz": [
+        0.0,
+        2.75,
+        0.25
+      ],
+      "dimensions_xyz": [
+        2.4,
+        0.45,
+        0.45
+      ],
+      "height_z": 0.45
+    },
+    "SmartTV_GameScreen": {
+      "location_xyz": [
+        0.0,
+        2.86,
+        1.45
+      ],
+      "dimensions_xyz": [
+        1.46,
+        0.01,
+        0.84
+      ],
+      "height_z": 0.84
+    },
+    "ArcLamp_Stem_V": {
+      "location_xyz": [
+        1.85,
+        -0.25,
+        0.75
+      ],
+      "dimensions_xyz": [
+        0.024,
+        0.024,
+        1.4
+      ],
+      "height_z": 1.4
+    },
+    "ArcLamp_DomeShade": {
+      "location_xyz": [
+        1.1,
+        0.25,
+        1.88
+      ],
+      "dimensions_xyz": [
+        0.32,
+        0.32,
+        0.12
+      ],
+      "height_z": 0.12
+    },
+    "Knitted_Ottoman_Pouf": {
+      "location_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions_xyz": [
+        0.5,
+        0.5,
+        0.32
+      ],
+      "height_z": 0.32
+    },
+    "PS5_Black_Core": {
+      "location_xyz": [
+        0.75,
+        2.68,
+        0.68
+      ],
+      "dimensions_xyz": [
+        0.09,
+        0.22,
+        0.38
+      ],
+      "height_z": 0.38
+    },
+    "TV_Soundbar_Body": {
+      "location_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions_xyz": [
+        0.96,
+        0.1,
+        0.06
+      ],
+      "height_z": 0.06
+    }
+  },
+  "materials": {
+    "Mat_AmberGlass": {
+      "base_color": [
+        0.65,
+        0.35,
+        0.12
+      ],
+      "roughness": 0.08,
+      "metallic": 0.0,
+      "emission_strength": 0.0
+    },
+    "Mat_AreaRug": {
+      "base_color": [
+        0.82,
+        0.78,
+        0.72
+      ],
+      "roughness": 0.95,
+      "metallic": 0.0,
+      "emission_strength": 0.0
+    },
+    "Mat_ArtCanvas_Abstract": {
+      "base_color": [
+        0.85,
+        0.42,
+        0.22
+      ],
+      "roughness": 0.7,
+      "metallic": 0.0,
+      "emission_strength": 0.0
+    },
+    "Mat_ArtShape_Gold": {
+      "base_color": [
+        0.88,
+        0.7,
+        0.25
+      ],
+      "roughness": 0.3,
+      "metallic": 0.8,
+      "emission_strength": 0.0
+    },
+    "Mat_ArtShape_Teal": {
+      "base_color": [
+        0.08,
+        0.32,
+        0.38
+      ],
+      "roughness": 0.6,
+      "metallic": 0.0,
+      "emission_strength": 0.0
+    },
+    "Mat_AudioReceiver_Black": {
+      "base_color": [
+        0.06,
+        0.06,
+        0.07
+      ],
+      "roughness": 0.25,
+      "metallic": 0.8,
+      "emission_strength": 0.0
+    },
+    "Mat_BlackMarble": {
+      "base_color": [
+        0.04,
+        0.04,
+        0.05
+      ],
+      "roughness": 0.12,
+      "metallic": 0.0,
+      "emission_strength": 0.0
+    },
+    "Mat_Brass": {
+      "base_color": [
+        0.85,
+        0.65,
+        0.25
+      ],
+      "roughness": 0.25,
+      "metallic": 0.95,
+      "emission_strength": 0.0
+    },
+    "Mat_CandleFlame": {
+      "base_color": [
+        1.0,
+        0.65,
+        0.15
+      ],
+      "roughness": 0.5,
+      "metallic": 0.0,
+      "emission_strength": 12.0
+    },
+    "Mat_CeramicRibbedPot": {
+      "base_color": [
+        0.96,
+        0.95,
+        0.92
+      ],
+      "roughness": 0.25,
+      "metallic": 0.0,
+      "emission_strength": 0.0
+    },
+    "Mat_Curtain": {
+      "base_color": [
+        0.95,
+        0.94,
+        0.92
+      ],
+      "roughness": 0.9,
+      "metallic": 0.0,
+      "emission_strength": 0.0
+    },
+    "Mat_DiffuserCeramic": {
+      "base_color": [
+        0.35,
+        0.38,
+        0.4
+      ],
+      "roughness": 0.3,
+      "metallic": 0.0,
+      "emission_strength": 0.0
+    },
+    "Mat_Glass": {
+      "base_color": [
+        0.9,
+        0.95,
+        1.0
+      ],
+      "roughness": 0.02,
+      "metallic": 0.0,
+      "emission_strength": 0.0
+    },
+    "Mat_KnitBlanket": {
+      "base_color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "roughness": 0.95,
+      "metallic": 0.0,
+      "emission_strength": 0.0
+    },
+    "Mat_LeatherTag": {
+      "base_color": [
+        0.35,
+        0.18,
+        0.08
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "emission_strength": 0.0
+    },
+    "Mat_OakFloor": {
+      "base_color": [
+        0.42,
+        0.26,
+        0.14
+      ],
+      "roughness": 0.3,
+      "metallic": 0.0,
+      "emission_strength": 0.0
+    },
+    "Mat_PillowCream": {
+      "base_color": [
+        0.88,
+        0.84,
+        0.78
+      ],
+      "roughness": 0.9,
+      "metallic": 0.0,
+      "emission_strength": 0.0
+    },
+    "Mat_PillowMustard": {
+      "base_color": [
+        0.85,
+        0.52,
+        0.12
+      ],
+      "roughness": 0.85,
+      "metallic": 0.0,
+      "emission_strength": 0.0
+    },
+    "Mat_PillowTeal": {
+      "base_color": [
+        0.08,
+        0.25,
+        0.3
+      ],
+      "roughness": 0.85,
+      "metallic": 0.0,
+      "emission_strength": 0.0
+    },
+    "Mat_PoufKnitCream": {
+      "base_color": [
+        0.86,
+        0.83,
+        0.78
+      ],
+      "roughness": 0.95,
+      "metallic": 0.0,
+      "emission_strength": 0.0
+    },
+    "Mat_PS5_BlackGloss": {
+      "base_color": [
+        0.02,
+        0.02,
+        0.03
+      ],
+      "roughness": 0.08,
+      "metallic": 0.0,
+      "emission_strength": 0.0
+    },
+    "Mat_PS5_BlueLED": {
+      "base_color": [
+        0.0,
+        0.6,
+        1.0
+      ],
+      "roughness": 0.5,
+      "metallic": 0.0,
+      "emission_strength": 8.0
+    },
+    "Mat_PS5_Case_BlueSpine": {
+      "base_color": [
+        0.05,
+        0.3,
+        0.85
+      ],
+      "roughness": 0.3,
+      "metallic": 0.0,
+      "emission_strength": 0.0
+    },
+    "Mat_PS5_Case_WhiteCover": {
+      "base_color": [
+        0.95,
+        0.95,
+        0.95
+      ],
+      "roughness": 0.4,
+      "metallic": 0.0,
+      "emission_strength": 0.0
+    },
+    "Mat_PS5_MicroButton": {
+      "base_color": [
+        0.15,
+        0.15,
+        0.16
+      ],
+      "roughness": 0.2,
+      "metallic": 0.8,
+      "emission_strength": 0.0
+    },
+    "Mat_PS5_WhiteShell": {
+      "base_color": [
+        0.96,
+        0.96,
+        0.98
+      ],
+      "roughness": 0.25,
+      "metallic": 0.0,
+      "emission_strength": 0.0
+    },
+    "Mat_RattanWood": {
+      "base_color": [
+        0.75,
+        0.6,
+        0.42
+      ],
+      "roughness": 0.6,
+      "metallic": 0.0,
+      "emission_strength": 0.0
+    },
+    "Mat_SofaFabric": {
+      "base_color": [
+        0.25,
+        0.28,
+        0.32
+      ],
+      "roughness": 0.88,
+      "metallic": 0.0,
+      "emission_strength": 0.0
+    },
+    "Mat_SoundbarBody": {
+      "base_color": [
+        0.05,
+        0.05,
+        0.06
+      ],
+      "roughness": 0.2,
+      "metallic": 0.9,
+      "emission_strength": 0.0
+    },
+    "Mat_SoundbarGrille": {
+      "base_color": [
+        0.08,
+        0.08,
+        0.09
+      ],
+      "roughness": 0.6,
+      "metallic": 0.5,
+      "emission_strength": 0.0
+    },
+    "Mat_SoyWax": {
+      "base_color": [
+        0.95,
+        0.93,
+        0.88
+      ],
+      "roughness": 0.3,
+      "metallic": 0.0,
+      "emission_strength": 0.0
+    },
+    "Mat_SpeakerButton": {
+      "base_color": [
+        0.15,
+        0.15,
+        0.16
+      ],
+      "roughness": 0.3,
+      "metallic": 0.8,
+      "emission_strength": 0.0
+    },
+    "Mat_SpeakerStatusLED": {
+      "base_color": [
+        0.95,
+        0.95,
+        1.0
+      ],
+      "roughness": 0.5,
+      "metallic": 0.0,
+      "emission_strength": 6.0
+    },
+    "Mat_TerracottaVase": {
+      "base_color": [
+        0.75,
+        0.35,
+        0.18
+      ],
+      "roughness": 0.8,
+      "metallic": 0.0,
+      "emission_strength": 0.0
+    },
+    "Mat_TortoiseGlasses": {
+      "base_color": [
+        0.28,
+        0.14,
+        0.06
+      ],
+      "roughness": 0.15,
+      "metallic": 0.3,
+      "emission_strength": 0.0
+    },
+    "Mat_TV_BezelBrushed": {
+      "base_color": [
+        0.04,
+        0.04,
+        0.05
+      ],
+      "roughness": 0.15,
+      "metallic": 0.9,
+      "emission_strength": 0.0
+    },
+    "Mat_TV_GameUI_Screen": {
+      "base_color": [
+        0.08,
+        0.4,
+        0.75
+      ],
+      "roughness": 0.08,
+      "metallic": 0.0,
+      "emission_strength": 3.5
+    },
+    "Mat_TV_HP_Bar": {
+      "base_color": [
+        0.1,
+        0.95,
+        0.3
+      ],
+      "roughness": 0.5,
+      "metallic": 0.0,
+      "emission_strength": 6.0
+    },
+    "Mat_TV_MiniMap": {
+      "base_color": [
+        0.95,
+        0.75,
+        0.1
+      ],
+      "roughness": 0.5,
+      "metallic": 0.0,
+      "emission_strength": 5.0
+    },
+    "Mat_WallOffWhite": {
+      "base_color": [
+        0.92,
+        0.9,
+        0.86
+      ],
+      "roughness": 0.85,
+      "metallic": 0.0,
+      "emission_strength": 0.0
+    },
+    "Mat_WallTeal": {
+      "base_color": [
+        0.08,
+        0.18,
+        0.22
+      ],
+      "roughness": 0.7,
+      "metallic": 0.0,
+      "emission_strength": 0.0
+    },
+    "Mat_WalnutWood": {
+      "base_color": [
+        0.2,
+        0.12,
+        0.07
+      ],
+      "roughness": 0.4,
+      "metallic": 0.0,
+      "emission_strength": 0.0
+    },
+    "Mat_WarmLED": {
+      "base_color": [
+        1.0,
+        0.85,
+        0.6
+      ],
+      "roughness": 0.5,
+      "metallic": 0.0,
+      "emission_strength": 4.5
+    },
+    "potted_plant_01_leaves": {
+      "base_color": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "roughness": 0.5,
+      "metallic": 0.0,
+      "emission_strength": 0.0
+    },
+    "potted_plant_01_pot": {
+      "base_color": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "roughness": 0.5,
+      "metallic": 0.0,
+      "emission_strength": 0.0
+    }
+  },
+  "lighting_analysis": {
+    "ArcLamp_Light": {
+      "type": "POINT",
+      "energy_watts": 45.0,
+      "color_rgb": [
+        1.0,
+        0.82,
+        0.55
+      ],
+      "location": [
+        1.1,
+        0.25,
+        1.8
+      ]
+    },
+    "Candle_Flame_Light": {
+      "type": "POINT",
+      "energy_watts": 5.0,
+      "color_rgb": [
+        1.0,
+        0.65,
+        0.2
+      ],
+      "location": [
+        0.16,
+        1.32,
+        0.52
+      ]
+    },
+    "Sunlight_Afternoon": {
+      "type": "SUN",
+      "energy_watts": 4.8,
+      "color_rgb": [
+        1.0,
+        0.94,
+        0.85
+      ],
+      "location": [
+        6.0,
+        -4.0,
+        5.0
+      ]
+    },
+    "Ceiling_Ambient": {
+      "type": "AREA",
+      "energy_watts": 85.0,
+      "color_rgb": [
+        0.95,
+        0.92,
+        0.88
+      ],
+      "location": [
+        0.0,
+        0.0,
+        2.7
+      ]
+    }
+  },
+  "camera_composition": {
+    "lens_focal_length_mm": 24.0,
+    "location": [
+      -2.4,
+      -1.8,
+      1.38
+    ],
+    "rotation_deg": [
+      76.0,
+      0.0,
+      -34.0
+    ]
+  }
+}

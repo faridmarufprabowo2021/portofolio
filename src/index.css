@@ -1,0 +1,295 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #AF101A;
+  --color-on-primary: #FFFFFF;
+  --color-on-primary-fixed: #410003;
+  --color-brick-blue: #0055A4;
+  --color-brick-yellow: #FFD700;
+  --color-brick-green: #00852B;
+  --color-on-surface: #1A1C1C;
+  --color-on-surface-variant: #5B403D;
+  --color-surface: #F9F9F9;
+  --color-surface-container: #EEEEEE;
+  --color-surface-container-high: #E8E8E8;
+  --color-surface-container-highest: #E2E2E2;
+  --color-surface-container-low: #F3F3F3;
+
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Work Sans", sans-serif;
+  --font-mono: "Space Mono", monospace;
+
+  --shadow-brick-sm: 2px 2px 0px 0px #1A1C1C;
+  --shadow-brick: 4px 4px 0px 0px #1A1C1C;
+  --shadow-brick-md: 6px 6px 0px 0px #1A1C1C;
+  --shadow-brick-lg: 8px 8px 0px 0px #1A1C1C;
+  --shadow-brick-xl: 10px 10px 0px 0px #1A1C1C;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light dark;
+}
+
+html, body {
+  background-color: #F9F9F9;
+  color: #1A1C1C;
+  transition: background-color 0.3s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body {
+  font-family: var(--font-body);
+  background-image: radial-gradient(circle, #1a1c1c24 2px, transparent 2.5px);
+  background-size: 24px 24px;
+}
+
+html.dark,
+html.dark body,
+html.dark #root {
+  background-color: #0D0F12 !important;
+  color: #F1F5F9 !important;
+}
+
+html.dark body {
+  background-image: radial-gradient(circle, rgba(255, 215, 0, 0.08) 1.5px, transparent 2px) !important;
+}
+
+::selection {
+  background-color: #AF101A;
+  color: #FFFFFF;
+}
+
+.dark ::selection {
+  background-color: #FF3B30;
+  color: #FFFFFF;
+}
+
+/* Lego Baseplate Dots Background */
+.lego-dot-bg {
+  background-color: #FBF9F8;
+  background-image: radial-gradient(circle, #1a1c1c24 2.5px, transparent 3px);
+  background-size: 24px 24px;
+}
+
+.dark .lego-dot-bg {
+  background-color: #0D0F12;
+  background-image: radial-gradient(circle, rgba(64, 158, 255, 0.12) 2px, transparent 2.5px);
+}
+
+/* Hard Drop Shadow Utilities */
+.brick-shadow {
+  box-shadow: 4px 4px 0px 0px #1A1C1C;
+}
+
+.brick-shadow-sm {
+  box-shadow: 2px 2px 0px 0px #1A1C1C;
+}
+
+.brick-shadow-md {
+  box-shadow: 6px 6px 0px 0px #1A1C1C;
+}
+
+.brick-shadow-lg {
+  box-shadow: 8px 8px 0px 0px #1A1C1C;
+}
+
+.brick-shadow-xl {
+  box-shadow: 10px 10px 0px 0px #1A1C1C;
+}
+
+/* Dark Mode Shadows */
+.dark .brick-shadow {
+  box-shadow: 4px 4px 0px 0px #000000;
+}
+
+.dark .brick-shadow-sm {
+  box-shadow: 2px 2px 0px 0px #000000;
+}
+
+.dark .brick-shadow-md {
+  box-shadow: 6px 6px 0px 0px #000000;
+}
+
+.dark .brick-shadow-lg {
+  box-shadow: 8px 8px 0px 0px #000000;
+}
+
+.dark .brick-shadow-xl {
+  box-shadow: 10px 10px 0px 0px #000000;
+}
+
+/* Lego Brick Card */
+.brick-card {
+  background-color: #FFFFFF;
+  border: 4px solid #1A1C1C;
+  box-shadow: 6px 6px 0px 0px #1A1C1C;
+  position: relative;
+  transition: background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.dark .brick-card {
+  background-color: #161920;
+  border-color: #2A2F3D;
+  box-shadow: 6px 6px 0px 0px #000000;
+  color: #F1F5F9;
+}
+
+/* Lego Tactile Interactive Button */
+.brick-btn {
+  will-change: transform, box-shadow;
+  transform-origin: center;
+  border: 4px solid #1A1C1C;
+  box-shadow: 4px 4px 0px 0px #1A1C1C;
+  transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s, background-color 0.2s;
+  cursor: pointer;
+  user-select: none;
+}
+
+.dark .brick-btn {
+  border-color: #2A2F3D;
+  box-shadow: 4px 4px 0px 0px #000000;
+}
+
+.brick-btn:hover {
+  transform: translate(-3px, -3px) rotate(-1.5deg) scale(1.02);
+  box-shadow: 7px 7px 0px 0px #1A1C1C;
+}
+
+.dark .brick-btn:hover {
+  box-shadow: 7px 7px 0px 0px #000000;
+}
+
+.brick-btn:active {
+  transform: translate(2px, 2px) rotate(0deg) scale(0.98);
+  box-shadow: 2px 2px 0px 0px #1A1C1C;
+}
+
+.dark .brick-btn:active {
+  box-shadow: 2px 2px 0px 0px #000000;
+}
+
+/* Stud Element on top/corners of Cards */
+.brick-stud {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid #1A1C1C;
+  border-radius: 50%;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.dark .brick-stud {
+  border-color: #2A2F3D;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Floating Badges Animation */
+@keyframes float-badge-1 {
+  0%, 100% {
+    transform: translateY(0) rotate(2deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(-1.5deg);
+  }
+}
+
+@keyframes float-badge-2 {
+  0%, 100% {
+    transform: translateY(0) rotate(-2.5deg);
+  }
+  50% {
+    transform: translateY(10px) rotate(1.5deg);
+  }
+}
+
+.animate-float-badge-1 {
+  will-change: transform;
+  animation: 3.6s ease-in-out infinite float-badge-1;
+}
+
+.animate-float-badge-2 {
+  will-change: transform;
+  animation: 4.2s ease-in-out 0.6s infinite float-badge-2;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: 0.25s ease-out forwards fadeIn;
+}
+
+/* ===================================================
+   LEGO MODULAR ENTRANCE ANIMATIONS (SNAP & ASSEMBLE)
+   =================================================== */
+
+.reveal {
+  opacity: 0;
+  will-change: opacity, transform;
+  transform: translateY(28px) scale(0.97);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.34, 1.4, 0.64, 1);
+}
+
+.reveal-snap {
+  opacity: 0;
+  will-change: opacity, transform;
+  transform: translateY(36px) scale(0.92) rotate(-1.5deg);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.34, 1.48, 0.64, 1);
+}
+
+.reveal-pop {
+  opacity: 0;
+  will-change: opacity, transform;
+  transform: scale(0.82) translateY(16px);
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.34, 1.55, 0.64, 1);
+}
+
+.reveal-left {
+  opacity: 0;
+  will-change: opacity, transform;
+  transform: translateX(-40px) translateY(12px) rotate(-1.8deg);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.34, 1.35, 0.64, 1);
+}
+
+.reveal-right {
+  opacity: 0;
+  will-change: opacity, transform;
+  transform: translateX(40px) translateY(12px) rotate(1.8deg);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.34, 1.35, 0.64, 1);
+}
+
+/* Stagger Delay Utilities */
+.delay-50 { transition-delay: 50ms; }
+.delay-100 { transition-delay: 100ms; }
+.delay-150 { transition-delay: 150ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-250 { transition-delay: 250ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-350 { transition-delay: 350ms; }
+.delay-400 { transition-delay: 400ms; }
+.delay-450 { transition-delay: 450ms; }
+.delay-500 { transition-delay: 500ms; }
+.delay-600 { transition-delay: 600ms; }
+
+.reveal-visible {
+  opacity: 1 !important;
+  transform: translate(0, 0) scale(1) rotate(0deg) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .reveal-snap, .reveal-pop, .reveal-left, .reveal-right, .animate-float-badge-1, .animate-float-badge-2 {
+    opacity: 1 !important;
+    transition: none !important;
+    transform: none !important;
+    animation: none !important;
+  }
+}
